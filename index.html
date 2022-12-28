@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Jeu - L'aventure des oiseaux</title>
+</head>
+<body id="mouvement">
+    <div>
+        <div id="box-jeu-center">
+            <div id="cieux" >
+                <p id="info" onmouseenter="info_in()" onmouseleave="info_out()"> &nbsp&nbspI&nbsp&nbsp </p>
+                <p id="numero"></p>
+                <div  class="reference_obstacle" >I</div>
+                <div class="reference_obstacle">I</div>
+                <div class="reference_obstacle" >I</div>
+                <img id="oiseaux" src="" alt="">
+            </div>
+            <div style="width: 100%; clear: both;">
+                <button type="button" id="jouer" onclick="demarrer()"> <strong> JOUER </strong> </button>
+            </div>
+        </div>
+    </div>
+    <div id="victoire">
+        <p> Felicitation vous avez réussi </p>
+        <button type="button" class="btn-avancer" style="float: right;">Prochaine scène</button>
+        <button type="button" class="btn-avancer" style="float: left;" onclick="window.location.reload()"> Redemarrer le Jeu</button>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
